@@ -1,0 +1,86 @@
+.main {
+  position: relative;
+  min-width: var(--content-width);
+  height: 100vh;
+  background-color: var(--base-bg);
+  background-image: url("../../../images/some-place.png");
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  &__list {
+    position: fixed;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+    width: var(--content-width);
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    position: absolute;
+
+    &_cloakroom {
+      top: 22%;
+      left: 29%;
+    }
+
+    &_stadium {
+      top: 36%;
+      left: 34%;
+    }
+
+    &_bridge {
+      top: 53%;
+      left: 22%;
+    }
+
+    &_observatory {
+      top: 47%;
+      left: 56%;
+    }
+
+    &_station {
+      top: 31%;
+      left: 61%;
+    }
+
+    &_apartments {
+      top: 17%;
+      left: 73%;
+    }
+
+    &_cafeteria {
+      top: 37%;
+      left: 76%;
+    }
+
+    &_swimming-pool {
+      top: 51%;
+      left: 69%;
+    }
+
+    &_gym {
+      top: 54%;
+      left: 85%;
+    }
+
+    &_hotel {
+      top: 60%;
+      left: 58%;
+    }
+  }
+}

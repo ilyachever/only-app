@@ -1,0 +1,22 @@
+:root {
+  // Contents Width
+  --content-width: 1280px;
+
+  // Colors
+  --base-bg: #727785;
+  --primary: #ffffff;
+  --green: rgb(101, 161, 81, 0.7);
+  --green_focus: rgb(55, 192, 15);
+  --green_hover: rgba(108, 197, 81, 0.75);
+  --green_active: rgb(101, 161, 81);
+  --blue: rgb(73, 119, 206, 0.7);
+  --blue_focus: rgb(146, 179, 241);
+  --blue_hover: rgba(71, 128, 234, 0.75);
+  --blue_active: rgb(73, 119, 206);
+
+  // Fonts
+  --main-f-f: "Arial", sans-serif;
+  --main-f-s: 14px;
+  --main-f-w: 400;
+  --main-l-h: 24px;
+}

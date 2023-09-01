@@ -1,0 +1,67 @@
+.btn {
+  min-width: 40px;
+  height: 40px;
+  padding: 11px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  color: inherit;
+
+  &_blue {
+    background-color: var(--blue);
+    transition: background-color 0.15s ease-in-out, transform 0.25s ease-in-out;
+
+    &:focus-visible {
+      outline: 3px solid var(--blue_focus);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      background-color: var(--blue_hover);
+      transform: scale(1.05);
+    }
+  }
+
+  &_green {
+    background-color: var(--green);
+    transition: background-color 0.15s ease-in-out, transform 0.25s ease-in-out;
+
+    &:focus-visible {
+      outline: 3px solid var(--green_focus);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      background-color: var(--green_hover);
+      transform: scale(1.05);
+    }
+  }
+
+  &_active {
+    gap: 15px;
+
+    .btn__content {
+      display: block;
+    }
+  }
+
+  &__icon {
+    pointer-events: none;
+  }
+
+  &__content {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+.btn_active.btn_green {
+  background-color: var(--green_active);
+}
+
+.btn_active.btn_blue {
+  background-color: var(--blue_active);
+}
